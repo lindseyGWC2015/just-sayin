@@ -41,9 +41,28 @@ window.alert("You're a beautiful unicorn!");
 </script>
 
 <script>
-window.alert(' I just wanted to say "You\'re a beautiful unicorn!"');
+window.alert(' I just wanted to say "You\'re a beautiful unicorn!" but first I need your name...');
 </script>
 
+<script>
+var firstName = prompt("What\'s your first name?");
+var lastName = prompt("What\'s your last name?");
+    window.alert("Hi " +firstName+ ' ' + lastName + " you are a beautiful unicorn!");
+</script>
+
+<script>
+var favoriteAnimal = prompt("What\'s your favorite animal?");
+
+    window.alert("I would like to own a " +favoriteAnimal+ " because they are awesome!");
+</script>
+
+<button onclick="alertName()">Alert!</button>
+
+<script>
+function alertName() {
+    alert("Lindsey");
+}
+</script>
 </body>
 
 </html>
