@@ -1,80 +1,71 @@
-<!DOCTYPE html>
-<html>
+< !DOCTYPE html>
+    <html>
 
-<head>
+    <head>
 
-    <title>Just Sayin'</title>
+        <title>Just Sayin'</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <div class="container" style="text-align:center; padding:100px;">
+        <div class="container" style="text-align:center; padding:100px;">
 
-        <div class="jumbotron">
+            <div class="jumbotron">
 
-            <h1>Just Sayin'</h1>
+                <h1>Just Sayin'</h1>
 
-            <p style="margin-top:40px;">Just Wanted to tell you...</p>
+                <p style="margin-top:40px;">Just Wanted to tell you...</p>
+
+            </div>
+
+            <p>App By Lindsey Bandl</p>
 
         </div>
-
-        <p>App By Lindsey Bandl</p>
-
-    </div>
-    <h1>My First Web Page</h1>
-    <p>My first paragraph.</p>
-
-    <div class="wow bounceInUp">
-        Hello
-    </div>
-
-    <link rel="stylesheet" href="css/animate.css">
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-    <script>
-        window.alert("You're a beautiful unicorn!");
-    </script>
-
-    <script>
-        window.alert(' I just wanted to say "You\'re a beautiful unicorn!" but first I need your name...');
-    </script>
-
-    <script>
-        var firstName = prompt("What\'s your first name?");
-        var lastName = prompt("What\'s your last name?");
-        window.alert("Hi " + firstName + ' ' + lastName + " you are a beautiful unicorn!");
-    </script>
-
-    <script>
-        var favoriteAnimal = prompt("What\'s your favorite animal?");
-
-        window.alert("I would like to own a " + favoriteAnimal + " because they are awesome!");
-    </script>
-
-    <button onclick="alertName()">Alert!</button>
-
-    <script>
-        function alertName() {
-            alert("Lindsey");
-        }
+        <h1>My First Web Page</h1>
+        <p>My first paragraph.</p>
 
 
+        <div class="wow bounceInUp">
+            Hello
+        </div>
 
-        new WOW().init();
-    </script>
-</body>
+        <button onclick="alertName()">Tell me your name!</button>
 
-</html>
+        <link rel="stylesheet" href="lib/animate.css">
 
-</body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-</html>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+        <script src="lib/wow.js"></script>
+
+        <script src="lib/app.js"></script>
+
+     
+     
+     <div id="countAlert" style="display:none;">
+            You have been told what's up <span id="number">XX</span> times.
+            </div>
+            
+         
+
+
+            
+     <input type="text" id="name"  />
+
+        
+        
+        
+
+            
+
+    </body>
+
+    </html>
