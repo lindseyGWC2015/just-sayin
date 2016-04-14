@@ -1,71 +1,131 @@
-< !DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-    <head>
+<head>
 
-        <title>Just Sayin'</title>
+    <title> Word Unscrabble </title>
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class="container" style="text-align:center; padding:100px;">
+    <div class="container" style="text-align:center; padding:100px;">
 
-            <div class="jumbotron">
+        <div class="jumbotron">
 
-                <h1>Just Sayin'</h1>
+            <h1>Word Unscrabble</h1>
 
-                <p style="margin-top:40px;">Just Wanted to tell you...</p>
-
-            </div>
-
-            <p>App By Lindsey Bandl</p>
+            <p style="margin-top:40px;">Hello! Before you start, please type in your name...</p>
 
         </div>
-        <h1>My First Web Page</h1>
-        <p>My first paragraph.</p>
+
+        <p>App By Lindsey Bandl</p>
+
+    </div>
 
 
-        <div class="wow bounceInUp">
-            Hello
-        </div>
+
+    <div class="wow bounceInUp">
+        Hello
+    </div>
+
+
+
+    <div id="countAlert" style="display:none;">
+        You have been told what's up <span id="number">XX</span> times.
+    </div>
+
+
+
+
+
+
+
+    <!-- intro text (ask name) -->
+    <div class="intro-text">
+        <input type="text" id="name" />
 
         <button onclick="alertName()">Tell me your name!</button>
-
-        <link rel="stylesheet" href="lib/animate.css">
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    </div>
 
 
-        <script src="lib/wow.js"></script>
-
-        <script src="lib/app.js"></script>
-
-     
-     
-     <div id="countAlert" style="display:none;">
-            You have been told what's up <span id="number">XX</span> times.
-            </div>
-            
-         
+    <div class="start-game" style="display:show"></div>
 
 
-            
-     <input type="text" id="name"  />
 
-        
-        
-        
 
-            
+    <!-- game intro (you can show their name here if you want) -->
 
-    </body>
+    <button onclick="gameIntro()"></button>
 
-    </html>
+    <div class="game-intro" style="display:none">
+
+    </div>
+
+
+
+<!-- actual game -->
+
+
+    <div class="actual-game" style="display:hide">
+
+        <button onclick="actualGame()"></button>
+    </div>
+
+
+
+
+
+    <!-- game complete -->
+
+
+    <div class="game-complete" style="display:hide">
+
+        <button onclick="gameComplete()"></button>
+    </div>
+
+
+
+
+
+    <!-- main alert (you’re a beautiful unicorn!!) -->
+
+
+    <div class="main-alert" style="display:hide">
+
+        <button onclick="()">Tell me your name!</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="lib/animate.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+    <script src="lib/wow.js"></script>
+
+    <script src="lib/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>
