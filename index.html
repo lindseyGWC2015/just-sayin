@@ -1,111 +1,108 @@
-< !DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-    <head>
+<head>
 
-        <title> Word Unscrabble </title>
+    <title> Word Unscrabble </title>
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class="container" style="text-align:center; padding:100px;">
+    <div class="container" style="text-align:center; padding:100px;">
 
-            <div class="jumbotron">
+        <div class="jumbotron">
 
-                <h1>Word Unscrabble</h1>
+            <h1>Word Unscramble</h1>
 
-                <p style="margin-top:40px;">Hello! Before you start, please type in your name...</p>
-
-            </div>
-
-            <p>App By Lindsey Bandl</p>
+            <p style="margin-top:40px;">Hello! Before you start, please type in your name...</p>
 
         </div>
 
+        <p>App By Lindsey Bandl</p>
 
+    </div>
 
-        <div class="wow bounceInUp">
-            Hello
-        </div>
 
 
+    <div class="wow bounceInUp">
+        Hello
+    </div>
 
-        <div id="countAlert" style="display:none;">
-            You have been told what's up <span id="number">XX</span> times.
-        </div>
 
 
+    <div id="countAlert" style="display:none;">
+        You have been told what's up <span id="number">XX</span> times.
+    </div>
 
 
 
 
 
-        <!-- intro text (ask name) -->
-        <div class="intro-text">
-          
-            <input type="text" id="name" />
 
-            <button onclick="alertName()">Tell me your name!</button>
-        </div>
 
+    <!-- intro text (ask name) -->
+    <div class="intro-text">
 
+        <input type="text" id="name" />
 
-        <!-- game intro (show name and instructions) -->
+        <button onclick="alertName()">Tell me your name!</button>
+    </div>
 
-       
 
-        <div class="game-intro" style="display:none">
-            <h1>Instructions</h1>
-            
- <button onclick="gameIntro()">Go to Game</button>
- 
-        </div>
 
+    <!-- game intro (show name and instructions) -->
 
 
-        <!-- actual game -->
 
+    <div class="game-intro" style="display:none">
+        <h1>Instructions</h1>
+        <p>Hello, ! A scrambled word will appear, and you must unscramble
+        it. Get it correct, and you will get a point, Get it wrong, and
+        you will lose. Click "Go to Game" to continue! </p>
 
-        <div class="actual-game" style="display:none">
-            <h1>Game</h1>
+        <button onclick="gameIntro()">Go to Game</button>
 
-            <button onclick="actualGame()">Submit Answer</button>
-        </div>
+    </div>
 
 
+    <!-- actual game -->
 
 
+    <div class="actual-game" style="display:none">
+        <h1>Game</h1>
 
-        <!-- game complete -->
+        <button onclick="actualGame()">Submit Answer</button>
+    </div>
 
 
-        <div class="game-complete" style="display:none">
-            <h1>Message</h1>
 
-            <button onclick="gameComplete()">See Score</button>
-        </div>
 
 
+    <!-- game complete -->
 
 
+    <div class="game-complete" style="display:none">
+        <h1>Message</h1>
 
-        <!-- main alert (you’re a beautiful unicorn!!) -->
+        <button onclick="gameComplete()">See Score</button>
+    </div>
 
 
-        <div class="main-alert" style="display:none">
-            <h1>Score</h1>
 
-            <button onclick="main-alert()">Play Again!</button>
-        </div>
 
 
+    <!-- main alert (you’re a beautiful unicorn!!) -->
 
 
+    <div class="main-alert" style="display:none">
+        <h1>Score</h1>
 
+        <button onclick="main-alert()">Play Again!</button>
+    </div>
 
 
 
@@ -114,23 +111,28 @@
 
 
 
-        <link rel="stylesheet" href="lib/animate.css">
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
-        <script src="lib/wow.js"></script>
 
-        <script src="lib/app.js"></script>
+    <link rel="stylesheet" href="lib/animate.css">
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
+    <script src="lib/wow.js"></script>
 
-    </body>
+    <script src="lib/app.js"></script>
 
-    </html>
+
+
+
+
+</body>
+
+</html>
